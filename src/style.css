@@ -1,0 +1,81 @@
+:root {
+  --cor-fundo: #181818;         /* Preto sofisticado */
+  --cor-texto: #ECECEC;         /* Branco suave */
+  --cor-destaque: #BFA14A;      /* Dourado discreto */
+  --cor-secundaria: #232323;    /* Cinza escuro */
+  --cor-vinho: #6B2737;         /* Vinho elegante */
+  --cor-verde: #2E4A3B;         /* Verde profundo */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+header, nav {
+  background-color: var(--cor-secundaria);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+button {
+  background-color: var(--cor-destaque);
+  color: var(--cor-fundo);
+  padding: 10px 24px;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: var(--cor-vinho);
+  color: var(--cor-texto);
+}
+
+div#content {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  width: 50%;
+  margin: 32px auto;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+h1, h2 {
+  color: var(--cor-destaque);
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--cor-texto);
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
